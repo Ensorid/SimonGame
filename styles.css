@@ -1,0 +1,95 @@
+* {
+  user-select: none;
+}
+
+a {
+  color: #0060ff;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 15);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  margin-top: 10vh;
+}
+
+p {
+  color: antiquewhite;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+}
+
+.quart {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.quart.active {
+  transform: scale(1.05);
+}
+
+#start-button {
+  border-color: #0060ff;
+  color: white;
+  background-color: #0060ff;
+  margin-bottom: 30px;
+}
+
+#green {
+  background-color: green;
+  border-top-left-radius: 100px;
+}
+
+#green:hover,
+#green.active {
+  box-shadow: 0 0px 25px green;
+}
+
+#red {
+  background-color: red;
+  border-top-right-radius: 100px;
+}
+
+#red:hover,
+#red.active {
+  box-shadow: 0 0px 25px red;
+}
+
+#blue {
+  background-color: blue;
+  border-bottom-left-radius: 100px;
+}
+
+#blue:hover,
+#blue.active {
+  box-shadow: 0 0px 25px blue;
+}
+
+#yellow {
+  background-color: yellow;
+  border-bottom-right-radius: 100px;
+}
+
+#yellow:hover,
+#yellow.active {
+  box-shadow: 0 0px 25px yellow;
+}
